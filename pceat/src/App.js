@@ -5,24 +5,40 @@ import Map from './components/Map.js';
 
 
 
-function App() {
-    addTime(id, time){
-        var current_hour = new Date();
-        console.log(current_hour);
-        this.setState({})
+class App extends React.Component {
+    constructor(props){
+      super(props);
+      var boothData = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20];
+      boothData = boothData.map(x => {return new Date()});
+      this.state = {
+        boothData: boothData
+      }
     }
-    constructor(props) {
-        super(props);
-        this.state = {
-            Booth: {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}
-        }
 
+      
+    addTime = (id, incrementTimeInMinutes) => {
+      var currentTime = new Date();
+      var newBoothData = this.state.boothData;
+      var previousTime = newBoothData[id];
+      if(previousTime < currentTime){
+        //expired time so we add to current time
+        previousTime = currentTime;
+      }
+      // console.log(previousTime);
+      previousTime.setMinutes(previousTime.getMinutes() + incrementTimeInMinutes);
+      newBoothData[id] = previousTime;
+      this.setState({boothData: newBoothData});
     }
-  return (
-    <div className="App">
-      <Map />
-    </div>
-  );
+
+    render(){
+      return (
+        <div className="App">
+          <Map AppState={this.state}
+               addTime={this.addTime}
+          />
+        </div>
+      );
+    }
 }
 
 export default App;

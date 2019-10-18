@@ -15,9 +15,9 @@ class Map extends React.Component{
     render(){
         return(
             <div style = {{flexDirection: 'row', display: 'flex'}}>
-                <Section0 />
-                <Section1 />
-                <Section2 />
+                <Section0 AppState = {this.props.AppState} addTime={this.props.addTime}/>
+                <Section1 AppState = {this.props.AppState} addTime={this.props.addTime}/>
+                <Section2 AppState = {this.props.AppState} addTime={this.props.addTime}/>
             </div>
         )
     }
