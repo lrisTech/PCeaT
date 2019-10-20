@@ -1,0 +1,17 @@
+.wrapper, html, body{
+	height: 100%;
+	margin:0;
+}
+
+.box1{
+	background-color: red;
+	display: flex;
+}
+.box2{
+	background-color: blue;
+	display: flex;
+}
+.box3{
+	background-color: green;
+	display:flex;
+}

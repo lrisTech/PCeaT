@@ -2,8 +2,11 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Map from './components/Map.js';
-
-
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './components/grid.css'
 
 class App extends React.Component {
     constructor(props){
@@ -32,10 +35,83 @@ class App extends React.Component {
 
     render(){
       return (
-        <div className="App">
-          <Map AppState={this.state}
-               addTime={this.addTime}
-          />
+        <div class="wrapper">
+          <Container fluid="true"> 
+             <Row style={{height:"20%"}}>
+                <Col style={{backgroundColor:"red"}}>FF</Col>
+                <Col style={{backgroundColor:"blue"}}>FF</Col>
+                <Col style={{backgroundColor:"green"}}>FF</Col>
+                <Col style={{backgroundColor:"red"}}>FF</Col>
+                <Col style={{backgroundColor:"blue"}}>FF</Col>
+                <Col style={{backgroundColor:"green"}}>FF</Col>
+                <Col style={{backgroundColor:"red"}}>FF</Col>
+                <Col style={{backgroundColor:"blue"}}>FF</Col>
+                <Col style={{backgroundColor:"green"}}>FF</Col>
+                <Col style={{backgroundColor:"red"}}>FF</Col>
+                <Col style={{backgroundColor:"blue"}}>FF</Col>
+                <Col style={{backgroundColor:"green"}}>FF</Col>
+            </Row>
+             <Row style={{height:"20%"}}>
+                <Col style={{backgroundColor:"red"}}>FF</Col>
+                <Col style={{backgroundColor:"blue"}}>FF</Col>
+                <Col style={{backgroundColor:"green"}}>FF</Col>
+                <Col style={{backgroundColor:"red"}}>FF</Col>
+                <Col style={{backgroundColor:"blue"}}>FF</Col>
+                <Col style={{backgroundColor:"green"}}>FF</Col>
+                <Col style={{backgroundColor:"red"}}>FF</Col>
+                <Col style={{backgroundColor:"blue"}}>FF</Col>
+                <Col style={{backgroundColor:"green"}}>FF</Col>
+                <Col style={{backgroundColor:"red"}}>FF</Col>
+                <Col style={{backgroundColor:"blue"}}>FF</Col>
+                <Col style={{backgroundColor:"green"}}>FF</Col>
+            </Row>
+             <Row style={{height:"20%"}}>
+                <Col style={{backgroundColor:"red"}}>FF</Col>
+                <Col style={{backgroundColor:"blue"}}>FF</Col>
+                <Col style={{backgroundColor:"green"}}>FF</Col>
+                <Col style={{backgroundColor:"red"}}>FF</Col>
+                <Col style={{backgroundColor:"blue"}}>FF</Col>
+                <Col style={{backgroundColor:"green"}}>FF</Col>
+                <Col style={{backgroundColor:"red"}}>FF</Col>
+                <Col style={{backgroundColor:"blue"}}>FF</Col>
+                <Col style={{backgroundColor:"green"}}>FF</Col>
+                <Col style={{backgroundColor:"red"}}>FF</Col>
+                <Col style={{backgroundColor:"blue"}}>FF</Col>
+                <Col style={{backgroundColor:"green"}}>FF</Col>
+            </Row>
+             <Row style={{height:"20%"}}>
+                <Col style={{backgroundColor:"red"}}>FF</Col>
+                <Col style={{backgroundColor:"blue"}}>FF</Col>
+                <Col style={{backgroundColor:"green"}}>FF</Col>
+                <Col style={{backgroundColor:"red"}}>FF</Col>
+                <Col style={{backgroundColor:"blue"}}>FF</Col>
+                <Col style={{backgroundColor:"green"}}>FF</Col>
+                <Col style={{backgroundColor:"red"}}>FF</Col>
+                <Col style={{backgroundColor:"blue"}}>FF</Col>
+                <Col style={{backgroundColor:"green"}}>FF</Col>
+                <Col style={{backgroundColor:"red"}}>FF</Col>
+                <Col style={{backgroundColor:"blue"}}>FF</Col>
+                <Col style={{backgroundColor:"green"}}>FF</Col>
+            </Row>
+             <Row style={{height:"20%"}}>
+                <Col style={{backgroundColor:"red"}}>FF</Col>
+                <Col style={{backgroundColor:"blue"}}>FF</Col>
+                <Col style={{backgroundColor:"green"}}>FF</Col>
+                <Col style={{backgroundColor:"red"}}>FF</Col>
+                <Col style={{backgroundColor:"blue"}}>FF</Col>
+                <Col style={{backgroundColor:"green"}}>FF</Col>
+                <Col style={{backgroundColor:"red"}}>FF</Col>
+                <Col style={{backgroundColor:"blue"}}>FF</Col>
+                <Col style={{backgroundColor:"green"}}>FF</Col>
+                <Col style={{backgroundColor:"red"}}>FF</Col>
+                <Col style={{backgroundColor:"blue"}}>FF</Col>
+                <Col style={{backgroundColor:"green"}}>FF</Col>
+            </Row>
+            
+
+
+          </Container>
+
         </div>
       );
     }
