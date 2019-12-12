@@ -7,7 +7,7 @@ class Booth extends React.Component{
     }
     render(){
         return(
-            <div>
+            <div style ={{borderColor:"black", borderWidth:"1"}}>
                 <div style = {{padding:10}}>
                     <Countdown date = {this.props.AppState.boothData[this.props.id]}/>
                 </div>

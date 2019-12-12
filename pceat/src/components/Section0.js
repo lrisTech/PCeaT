@@ -8,7 +8,7 @@ class Section0 extends React.Component{
 
     render(){
         return(
-            <div style = {{flexGrow: 1, display: "flex", flexDirection: "column"}}>
+            <div style = {{flexGrow: 1, display: "flex", flexDirection: "column", height: "100%", borderColor: "black", borderWidth: "thin"}}>
                 <Booth id = '0' AppState = {this.props.AppState} addTime={this.props.addTime}/>
                 <Booth id = '1' AppState = {this.props.AppState} addTime={this.props.addTime}/>
                 <Booth id = '2' AppState = {this.props.AppState} addTime={this.props.addTime}/>
